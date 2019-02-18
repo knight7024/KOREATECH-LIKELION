@@ -183,7 +183,7 @@ nav.scrolled-nav {
     transform: translateX(-50%);
     width: 18rem;
     min-height: 27rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .section-wrapper .schedule {
