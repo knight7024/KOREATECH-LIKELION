@@ -21,7 +21,7 @@ section {
 
 
 section:nth-child(even) {
-    background-color: RGBA(250,250,250,0.80);
+    background-color: RGBA(250, 250, 250, 0.80);
 }
 
 footer {
@@ -43,7 +43,9 @@ nav.scrolled-nav {
     font-size: 15px;
 }
 
-.scrolled-nav #navbarNavDropdown, .scrolled-nav .white-logo, .scrolled-nav .navbar-toggler {
+.scrolled-nav #navbarNavDropdown,
+.scrolled-nav .white-logo,
+.scrolled-nav .navbar-toggler {
     filter: invert(1);
 }
 
@@ -192,7 +194,7 @@ nav.scrolled-nav {
     list-style: disclosure-closed;
 }
 
-.section-wrapper .schedule > li {
+.section-wrapper .schedule>li {
     font-size: 18px;
     line-height: 36px;
 }
@@ -208,7 +210,7 @@ nav.scrolled-nav {
     font-weight: 600;
 }
 
-.section-wrapper .sns-content .sns-divider > i {
+.section-wrapper .sns-content .sns-divider>i {
     display: inline-block;
     color: #3b5998;
 }
