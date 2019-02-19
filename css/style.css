@@ -307,7 +307,7 @@ i {
 
 i.custom-icon::before {
     content: '';
-    background: url('assets/kakaotalk_icon.png');
+    background: url('../assets/kakaotalk_icon.png');
     height: 22px;
     display: inline-block;
     width: 20px;
