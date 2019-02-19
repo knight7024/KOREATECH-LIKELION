@@ -20,7 +20,7 @@ section {
 }
 
 
-section:nth-child(even) {
+section:nth-child(odd) {
     background-color: RGBA(250, 250, 250, 0.80);
 }
 
@@ -173,10 +173,12 @@ nav.scrolled-nav {
     margin: 40px;
 }
 
-.section-wrapper .rounded-btn {
+.rounded-btn {
     padding: 10px 20px;
     font-size: 20px;
-    border-radius: 200px;
+    border-radius: 30px;
+    /* background-color: #FF9E1B;
+    border: none; */
 }
 
 .card-align .card {
@@ -191,12 +193,17 @@ nav.scrolled-nav {
 .section-wrapper .schedule {
     text-align: left;
     display: inline-block;
-    list-style: disclosure-closed;
+    list-style: none;
 }
 
 .section-wrapper .schedule>li {
     font-size: 18px;
     line-height: 36px;
+}
+
+.section-wrapper .schedule>li .bold-text {
+    font-weight: 300;
+    font-style: italic;
 }
 
 .section-wrapper .detail-content {
@@ -206,7 +213,7 @@ nav.scrolled-nav {
     text-align: left;
 }
 
-.section-wrapper .bold-text {
+.bold-text {
     font-weight: 600;
 }
 
@@ -255,3 +262,56 @@ i {
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
 } */
+
+.list-head::before {
+    content: '# ';
+}
+
+.detail-button {
+    color: #ffb74d;
+    border-color: #ffb74d;
+    transition: all 0.4s cubic-bezier(0.5, 0, 0, 0.8);
+}
+
+.detail-button:hover {
+    background-color: #ffa726;
+    border-color: #ffa726;
+}
+
+#scroll-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #ffa726;
+    border-radius: 4px;
+    color: #FFF;
+    z-index: 99;
+    transition: opacity 0.4s cubic-bezier(0.5, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+#scroll-to-top::before {
+    content: '\f062';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+#scroll-to-top.hideElement {
+    opacity: 1;
+}
+
+i.custom-icon::before {
+    content: '';
+    background-image: url(/assets/kakaotalk_icon.png);
+    height: 22px;
+    display: inline-block;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: sub;
+}
